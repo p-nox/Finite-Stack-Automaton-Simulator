@@ -1,39 +1,26 @@
 # Finite Stack-Based Automaton Simulator
 
-This repository contains a C program for simulating a finite automaton based on the input provided in a configuration file. The program reads the configuration file, which specifies the number of states, initial and final states, and transitions, and allows users to input words to be checked against the defined automaton.
+This repository contains a C program for simulating a finite automaton based on the input provided in a configuration file. The program reads the configuration file, which specifies the number of states, initial and final states, and transitions, and allows users to input words to be checked against the defined automaton. This project was inspired by the theory of automata and formal languages.
 
 ## Table of Contents
 
 1. [Overview](#overview)
-2. [Usage](#usage)
+2. [Features](#features)
 3. [File Structure](#file-structure)
-4. [Contributing](#contributing)
-5. [License](#license)
+4. [Getting Started](#getting-started)
+5. [Build and Run](#build-and-run)
 
 ## Overview
 
 The finite automaton simulator is designed to read a configuration file containing information about the automaton's states, transitions, and initial/final states. Users can then input words to be processed by the automaton, and the program will determine whether each word is accepted or rejected.
 
+## Features
 The main functionalities include:
-- Reading the configuration file to initialize the finite automaton.
-- Accepting user input words for processing.
-- Checking whether each input word is accepted or rejected by the automaton.
-- Providing feedback on the acceptance/rejection status and the current state of the automaton.
-
-## Usage
-
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/your-username/finite-automaton-simulator.git
-   cd finite-automaton-simulator
-   
-2. **Compile the Program:**
-   ```bash
-   gcc finite_automaton.c -o finite_automaton
-
-3. **Run the Program:**
-   ```bash
-   ./finite_automaton
+   * **Finite Automaton with Stack:** The program models a finite automaton with a stack, allowing it to process input strings and make decisions based on transitions between states.
+   * **Transition Specification:** Transitions are defined in the input file, indicating the source state, input character, target state, and stack manipulation operations (push and pop).
+   * **User Interaction:** The program interacts with the user, prompting them to provide an input file containing the automaton's specifications. Users can then input words to be processed by the automaton.
+   * **Word Acceptance:** The automaton determines whether a given input word is accepted or rejected based on the defined transitions and the final state.
+   * **Dynamic Memory Allocation:** The program uses dynamic memory allocation for storing transition information, providing flexibility for automata with varying numbers of states and transitions.
 
 ## File Structure
     
@@ -58,5 +45,13 @@ The main functionalities include:
      * **Transition 6 (4eae4):** From state 4, when encountering 'e', stay in state 4 and push 'a' onto the stack. Then, transition to state 4.
      * **Transition 7 (4eSe5):** From state 4, when encountering 'e', pop 'a' from the stack, pop 'e' from the stack, stay in state 4, and push 'e' onto the stack. Then, transition to state 5.
     
+## Getting Started
 
+   1. **Input File Specification:** The user is required to provide an input file containing the specifications of the finite automaton. This includes the number of states, initial and final states, and the transitions.
+
+   2. **User Interaction:** After reading the input file, the program prompts the user to input words for the automaton to process. The user can choose to continue or exit after each word.
+
+   3. **Word Processing:** The program processes each input word using the specified transitions and determines whether the word is accepted or rejected.
+
+## Build and Run
    
