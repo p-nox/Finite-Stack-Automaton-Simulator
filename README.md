@@ -54,4 +54,8 @@ The main functionalities include:
    3. **Word Processing:** The program processes each input word using the specified transitions and determines whether the word is accepted or rejected.
 
 ## Build and Run
-   
+
+## Notes
+
+ * The simulator relies on standard input for word input, and it can be terminated by entering 'N' when prompted to continue.
+ * Ensure that the input file adheres to the specified format   
