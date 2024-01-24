@@ -8,7 +8,6 @@ This repository contains a C program for simulating a finite automaton based on 
 2. [Features](#features)
 3. [File Structure](#file-structure)
 4. [Getting Started](#getting-started)
-5. [Build and Run](#build-and-run)
 
 ## Overview
 
