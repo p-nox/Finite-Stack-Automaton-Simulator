@@ -1,6 +1,8 @@
 # Finite Stack-Based Automaton Simulator
 
-This repository contains a C program for simulating a finite automaton based on the input provided in a configuration file. The program reads the configuration file, which specifies the number of states, initial and final states, and transitions, and allows users to input words to be checked against the defined automaton. This project was inspired by the theory of automata and formal languages.
+This project implements a **Pushdown Automaton (PDA)** simulator in C. 
+It reads a PDA configuration from a text file, processes input strings, and determines whether they are accepted or rejected based on the PDA's transition rules and stack behavior.
+
 
 ## Table of Contents
 
