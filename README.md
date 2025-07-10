@@ -4,13 +4,6 @@ This project implements a **Pushdown Automaton (PDA)** simulator in C.
 It reads a PDA configuration from a text file, processes input strings, and determines whether they are accepted or rejected based on the PDA's transition rules and stack behavior.
 
 
-## Table of Contents
-
-1. [Overview](#overview)
-2. [Features](#features)
-3. [File Structure](#file-structure)
-4. [Getting Started](#getting-started)
-
 ## Overview
 
 The finite automaton simulator is designed to read a configuration file containing information about the automaton's states, transitions, and initial/final states. Users can then input words to be processed by the automaton, and the program will determine whether each word is accepted or rejected.
